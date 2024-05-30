@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-axios.defaults.baseURL = process.env.REACT_APP_URI
+axios.defaults.baseURL = "https://blog-user-backend.vercel.app/";
 
 axios.interceptors.request.use(config => {
     const token = localStorage.getItem('token')
