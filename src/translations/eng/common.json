@@ -1,0 +1,56 @@
+{
+  "header": {
+    "writeArticle": "Write Article",
+    "logout": "Logout",
+    "login": "Login",
+    "createAccount": "Create Account",
+    "logo": "Book"
+  },
+  "tabs": {
+    "all": "Tags",
+    "popular": "Popular"
+  },
+  "search": {
+    "placeholder": "Search...",
+    "ariaLabel": "search",
+    "error": "Failed to fetch search results",
+    "noResults": "No results found"
+  },
+
+  "addPost": {
+    "uploadPreview": "Upload Preview",
+    "remove": "Remove",
+    "titlePlaceholder": "Post Title...",
+    "tagsPlaceholder": "Tags",
+    "editorPlaceholder": "Enter text...",
+    "edit": "Edit",
+    "publish": "Publish",
+    "cancel": "Cancel"
+  },
+  "login": {
+    "loginToAccount": "Login to your account",
+    "email": "Email",
+    "password": "Password",
+    "showPassword": "Show Password",
+    "hidePassword": "Hide Password",
+    "requiredField": "This field is required",
+    "passwordMinLength": "Password must be at least 5 characters",
+    "passwordMaxLength": "Password must not exceed 6 characters",
+    "login": "Login"
+  },
+  "registration": {
+    "createAccount": "Create an Account",
+    "username": "Username",
+    "requiredField": "This field is required",
+    "usernameMinLength": "Username must be at least 2 characters long",
+    "email": "Email",
+    "password": "Password",
+    "passwordMaxLength": "Password must be no more than 6 characters long",
+    "register": "Register"
+  },
+  "comment": {
+    "commentsTitle": "Comments",
+    "send": "send",
+    "inputComment": "Write a comment"
+  }
+}

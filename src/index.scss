@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.light {
+  background-color: white;
+  color: black;
+  .logo{
+    color: #1111;
+  }
+}
+
+.dark {
+  background-color: #020817;
+  color: white;
+  height: 100vh;
+  .logo{
+    color: #fff;
+  }
+}

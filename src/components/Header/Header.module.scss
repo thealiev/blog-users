@@ -1,0 +1,22 @@
+.root {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

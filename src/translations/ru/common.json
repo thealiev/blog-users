@@ -1,0 +1,55 @@
+{
+  "header": {
+    "writeArticle": "Написать статью",
+    "logout": "Выйти",
+    "login": "Войти",
+    "createAccount": "Создать аккаунт",
+    "logo": "книга"
+  },
+  "tabs": {
+    "all": "Тэги",
+    "popular": "Популярные"
+  },
+  "search": {
+    "placeholder": "Искать...",
+    "ariaLabel": "искать",
+    "error": "Не удалось получить результаты поиска",
+    "noResults": "Результатов не найдено"
+  },
+  "addPost": {
+    "uploadPreview": "Загрузить превью",
+    "remove": "Удалить",
+    "titlePlaceholder": "Заголовок статьи...",
+    "tagsPlaceholder": "Тэги",
+    "editorPlaceholder": "Введите текст...",
+    "edit": "Редактировать",
+    "publish": "Опубликовать",
+    "cancel": "Отмена"
+  },
+  "login": {
+    "loginToAccount": "Вход в аккаунт",
+    "email": "E-mail",
+    "password": "Пароль",
+    "showPassword": "Показать пароль",
+    "hidePassword": "Скрыть пароль",
+    "requiredField": "Это поле обязательно для заполнения",
+    "passwordMinLength": "Пароль должен содержать не менее 5 символов",
+    "passwordMaxLength": "Пароль не должен превышать 6 символов",
+    "login": "Войти"
+  },
+  "registration": {
+    "createAccount": "Создание аккаунта",
+    "username": "Имя пользователя",
+    "requiredField": "Поле обязательно для заполнения",
+    "usernameMinLength": "Имя пользователя должно быть не менее двух символов",
+    "email": "E-Mail",
+    "password": "Пароль",
+    "passwordMaxLength": "Пароль должен быть не более 6 символов",
+    "register": "Зарегистрироваться"
+  },
+  "comment": {
+    "commentsTitle": "комментарий",
+    "send": "Отправить",
+    "inputComment": "Написать комментарий"
+  }
+}
