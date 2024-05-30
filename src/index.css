@@ -3,15 +3,21 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F5F5F5 !important;
 }
 
 .light {
   background-color: white;
   color: black;
 }
+.light .logo {
+  color: rgba(17, 17, 17, 0.0666666667);
+}
 
 .dark {
   background-color: #020817;
-  color: black;
+  color: white;
+  height: 100vh;
 }
+.dark .logo {
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */
