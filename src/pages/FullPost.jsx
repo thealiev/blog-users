@@ -40,7 +40,7 @@ export const FullPost = () => {
         id={id}
         title={data.title}
         description={data.description}
-        imageUrl={data.imageUrl?`http://localhost:3002/${data.imageUrl}`: ''}
+          imageUrl={data.imageUrl ?`${process.env.REACT_APP_URI}${data.imageUrl}`: ''}
         user={data.user}
         createdAt={data.createdAt}
         commentsCount={comments? comments.length : 0}
