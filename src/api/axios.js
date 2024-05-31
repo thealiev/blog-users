@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-axios.defaults.baseURL = 'http://localhost:3002'
+axios.defaults.baseURL =
+  "mongodb+srv://tarqymuhammadal:3qv6kRT5BxHKTdml@usercollection.ig7qnm1.mongodb.net/";
 
 axios.interceptors.request.use(config => {
     const token = localStorage.getItem('token')
