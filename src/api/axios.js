@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-axios.defaults.baseURL = 'http://localhost:3002'
+axios.defaults.baseURL = "https://blog-user-backend.onrender.com";
 
 axios.interceptors.request.use(config => {
     const token = localStorage.getItem('token')
