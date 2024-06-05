@@ -7,6 +7,7 @@ import { logout } from '../../redux/slices/auth';
 import ThemeToggle from '../ThemeToggle';
 import styles from './Header.module.scss';
 import SearchInput from '../SearchInput';
+import CreateTicketButton from '../jira/CreateTicketButton';
 
 export const Header = () => {
   const { t, i18n } = useTranslation('common');
@@ -63,6 +64,7 @@ export const Header = () => {
             </Select>
             </FormControl>
             <ThemeToggle />
+            <CreateTicketButton/>
           </Box>
         </Box>
       </Container>

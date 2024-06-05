@@ -4,6 +4,7 @@ import postReducer from "../redux/slices/post";
 import authReducer from "../redux/slices/auth";
 import commentReducer from "../redux/slices/comment";
 import userReducer from "../redux/slices/user";
+import jira from "../redux/slices/jira";
 import thunk from "redux-thunk";
 
 const store = configureStore({
@@ -13,6 +14,7 @@ const store = configureStore({
     auth: authReducer,
     comment: commentReducer,
     user: userReducer,
+    jira: jira
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunk),
   devTools: true,

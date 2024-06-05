@@ -8,6 +8,7 @@ import { Post } from '../components/Post';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchPopularPosts, fetchPosts, fetchTags } from '../redux/slices/post';
 import { useTranslation } from 'react-i18next';
+import UserTickets from '../components/user-ticket/UserTickets';
 
 export const Home = () => {
   const [pop, setPop] = useState(0);
@@ -36,6 +37,7 @@ export const Home = () => {
         <Tab label={t('tabs.all')} />
         <Tab label={t('tabs.popular')} />
       </Tabs>
+      <UserTickets/>
       <Grid container spacing={4}>
         <Grid xs={8} item>
           {isLoading ? (
