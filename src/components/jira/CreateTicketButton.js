@@ -3,7 +3,7 @@ import { Button, Modal, TextField, Select, MenuItem } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import axios from "axios";
+import axios from "../../api/axios";
 import "./CreateTicketButton.scss";
 
 const theme = createTheme();
