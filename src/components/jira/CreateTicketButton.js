@@ -26,7 +26,7 @@ const CreateTicketButton = () => {
       });
       const ticketKey = response.data.key;
       toast.success(
-        `Ticket created: ${ticketKey}. Link: https://salohiddintojiyev.atlassian.net/jira/software/projects/KAN/boards/1${ticketKey}`
+        `Ticket created: ${ticketKey}. Link: http://localhost:3000/api/create-ticket${ticketKey}`
       );
       setIsModalOpen(false);
     } catch (error) {
