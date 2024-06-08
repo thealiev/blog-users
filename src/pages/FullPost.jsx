@@ -7,9 +7,10 @@ import { CommentsBlock } from "../components/CommentsBlock";
 import { useParams } from "react-router-dom";
 import axios from '../api/axios'
 import { useSelector } from "react-redux";
+
 export const FullPost = () => {
   const [data, setData] = useState({})
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const [postId, setPostId] = useState('')
   const {comments} = useSelector(state => state.comment)
   const {id} = useParams();
@@ -40,7 +41,7 @@ export const FullPost = () => {
         id={id}
         title={data.title}
         description={data.description}
-          imageUrl={data.imageUrl ?`${data.imageUrl}`: ''}
+          imageUrl={data.imageUrl ? data.imageUrl: ''}
         user={data.user}
         createdAt={data.createdAt}
         commentsCount={comments? comments.length : 0}

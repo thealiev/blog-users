@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button, Modal, TextField, Select, MenuItem } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import "./CreateTicketButton.scss";
 
@@ -15,7 +17,7 @@ const CreateTicketButton = () => {
 
   const handleCreateTicket = async () => {
     try {
-      const response = await axios.post("/jiraController/create-ticket", {
+      const response = await axios.post("/api/create-ticket", {
         user: { username: "current-user" },
         summary,
         priority,
@@ -23,13 +25,13 @@ const CreateTicketButton = () => {
         collection,
       });
       const ticketKey = response.data.key;
-      alert(
-        `Ticket created: ${ticketKey}. Link: https://salohiddintojiyev.atlassian.net/jira/software/projects/KAN/settings/access${ticketKey}`
+      toast.success(
+        `Ticket created: ${ticketKey}. Link: https://salohiddintojiyev.atlassian.net/jira/software/projects/KAN/boards/1${ticketKey}`
       );
       setIsModalOpen(false);
     } catch (error) {
       console.error("Error creating ticket:", error);
-      alert("Failed to create ticket");
+      toast.error("Failed to create ticket");
     }
   };
 
@@ -45,8 +47,8 @@ const CreateTicketButton = () => {
               value={summary}
               onChange={(e) => setSummary(e.target.value)}
             />
-                      <Select
-                          sx={{marginTop:'30px'}}
+            <Select
+              sx={{ marginTop: "30px" }}
               label="Priority"
               value={priority}
               onChange={(e) => setPriority(e.target.value)}
@@ -59,6 +61,7 @@ const CreateTicketButton = () => {
             <Button onClick={() => setIsModalOpen(false)}>Cancel</Button>
           </div>
         </Modal>
+        <ToastContainer />
       </>
     </ThemeProvider>
   );
