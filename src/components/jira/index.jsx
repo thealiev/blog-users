@@ -17,17 +17,15 @@ const CreateTicketButton = () => {
 
   const handleCreateTicket = async () => {
     try {
-      const response = await axios.post("/api/jira/create-ticket", {
-        user: { username: "current-user" },
-        summary,
-        priority,
+      const response = await axios.post("/api/tickets", {
+        title: summary,
+        description: "This is a description",
         link,
         collection,
+        priority,
       });
-      const ticketKey = response.data.key;
-      toast.success(
-        `Ticket created: ${ticketKey}. Link: http://localhost:3000/api/jira/create-ticket/${ticketKey}`
-      );
+      const ticketKey = response.data._id;
+      toast.success(`Ticket created: ${ticketKey}. Link: /tickets/${ticketKey}`);
       setIsModalOpen(false);
     } catch (error) {
       console.error("Error creating ticket:", error);
@@ -41,7 +39,7 @@ const CreateTicketButton = () => {
         <Button onClick={() => setIsModalOpen(true)}>Create Ticket</Button>
         <Modal open={isModalOpen} onClose={() => setIsModalOpen(false)}>
           <div className="modal">
-            <h2>Create Jira Ticket</h2>
+            <h2>Create Ticket</h2>
             <TextField
               label="Summary"
               value={summary}
