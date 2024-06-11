@@ -8,7 +8,7 @@ import { Post } from '../components/Post';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchPopularPosts, fetchPosts, fetchTags } from '../redux/slices/post';
 import { useTranslation } from 'react-i18next';
-import UserTickets from '../components/user-ticket/UserTickets';
+import UserTickets from '../components/user-ticket/index';
 
 export const Home = () => {
   const [pop, setPop] = useState(0);
