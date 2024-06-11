@@ -17,7 +17,7 @@ const CreateTicketButton = () => {
 
   const handleCreateTicket = async () => {
     try {
-      const response = await axios.post("/api/create-ticket", {
+      const response = await axios.post("/api/jira/create-ticket", {
         user: { username: "current-user" },
         summary,
         priority,
@@ -26,7 +26,7 @@ const CreateTicketButton = () => {
       });
       const ticketKey = response.data.key;
       toast.success(
-        `Ticket created: ${ticketKey}. Link: http://localhost:3000/api/create-ticket${ticketKey}`
+        `Ticket created: ${ticketKey}. Link: http://localhost:3000/api/jira/create-ticket/${ticketKey}`
       );
       setIsModalOpen(false);
     } catch (error) {

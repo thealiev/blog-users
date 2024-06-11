@@ -4,7 +4,7 @@ import axios from "../../api/axios";
 export const fetchUserTickets = createAsyncThunk(
   "jira/fetchUserTickets",
   async () => {
-    const response = await axios.get("/api/create-ticket");
+    const response = await axios.get("/api/jira/user-tickets");
     return response.data;
   }
 );

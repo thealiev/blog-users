@@ -27,7 +27,7 @@ const UserTickets = () => {
           {userTickets.map((ticket) => (
             <li key={ticket?.id}>
               <Link
-                href={`https://salohiddintojiyev.atlassian.net/jira/software/projects/KAN/boards/1${ticket.key}`}
+                to={`https://salohiddintojiyev.atlassian.net/jira/software/projects/KAN/boards/1${ticket.key}`}
               >
                 {ticket?.summary}
               </Link>{" "}
